@@ -8,4 +8,4 @@ class Blog(models.Model):
     image = models.ImageField(upload_to='images/')
 
     def summary(self):
-        return self.body[:50] + ' ...[More]'
+        return self.body[:50]
