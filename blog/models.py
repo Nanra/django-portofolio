@@ -7,7 +7,7 @@ class Blog(models.Model):
     body = models.TextField()
     image = models.ImageField(upload_to='images/')
 
-    def __str__(self):
+    def __str__(self): # To Change Admin Panel Title to Post Title
         return self.title
     
 

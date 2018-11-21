@@ -5,3 +5,6 @@ from .models import Blog
 def listBlog(request):
     isiBlog = Blog.objects
     return render(request, 'blog/list-blog.html', {'blogs':isiBlog})
+
+def detail(request):
+    return render(request, 'blog/detail.html')
